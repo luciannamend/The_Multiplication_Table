@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* apply to all */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+    color: rgb(47, 46, 46);
+    text-decoration: none;
+}
+
+/*apply to body*/
+body {
+    background-color:rgb(245, 247, 251);    
+}
+
+/* body header */
+.logo {
+    color: rgb(221, 238, 230);
+    font-size: 1.85rem;
+    font-weight: bold;
+    margin: 2rem;
+    margin-right: 11rem;
+}
+
+.logo span {
+    color: rgb(140, 131, 140);
+}
+
+/*navigation bar*/
+.navbar { 
+    position: fixed;
+    color: #DEEFE7;
+    background-color: rgb(101, 10, 101);
+    overflow: hidden;   
+    top: 0;
+    left: 0;
+    right: 2rem;
+    width: 100%;
+}
+
+.navitem {    
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.15rem;
+    padding: 1rem;
+    color: rgb(214, 214, 215);
+}
+
+.navitem:hover {   
+    color: rgb(143, 142, 144);
+    transition: 500ms;
+}
+
+.navitem.active {
+    background-color: #DEEFE7;
+    color: #002333;
+    transition: 500ms;
+}
+
+/*Topic intro*/
+h1{
+    margin: 2.35rem;
+    margin-top: 4rem;
+    color: rgb(63, 58, 58);
+}
+
+p{
+    margin: 2.35rem;
+}
+
+/*apply to table*/
+table, tr, th {
+    border:0.1rem solid rgb(93, 92, 92);
+    text-align: center; 
+}
+
+table > tr{
+    display: inline-block;
+}
+
+table{
+    margin: 2.35rem;
+}
+
+/*apply to form*/
+.form{
+    display: inline-block;
+    margin: 2.35rem;
+    margin-top: 2rem;
+}
+
+input[type=text]{
+    background-color: rgba(228, 222, 228, 0.346);
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-color: rgba(228, 222, 228);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=submit]{
+    background-color: rgb(101, 10, 101);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    float: left;
+}
+  
+input[type=submit]:hover {
+    background-color: rgb(57, 3, 57);
+}
+
+/* Tip section */
+.tip{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+img{
+    width: 20rem;
+    border-radius: 10rem;
+}
+
+/* Footer */
+.copyright{
+    margin-top: 3rem;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: rgb(238, 241, 246);
+}

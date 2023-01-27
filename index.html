@@ -1,0 +1,78 @@
+<!-- basic html structure -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--Link to .css-->
+    <link rel="stylesheet" href="assignment1-css/Assignment1.css">
+</head>
+
+<body>
+<!--Navigation bar goes here-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Math<span>Help</span></a>
+            <a class="navitem" href="#" target="_blank">Home</a>
+            <a class="navitem" href="#" target="_blank">Algebra</a>
+            <a class="navitem" href="#" target="_blank">Data</a>
+            <a class="navitem" href="#" target="_blank">Geometry</a>
+            <a class="navitem" href="#" >Numbers</a>
+            <a class="navitem" href="#"target="_blank">Games</a>                      
+        </nav>     
+        <div>
+            <a href="#" target="_blank"><img class="banner" src="#"></a>
+        </div>
+    </header>
+
+<!--Topic Intro-->
+    <div class="topic"> 
+        <h1>The Multiplication Table</h1>
+
+        <p>While it is generally more important to know why things work, with the tables
+            I recommend pure memory, it makes future math work much easier.
+            <br/>
+            Much like walking, you don't want to think what your feet are doing, you want
+            to enjoy the adventure.</p>
+    </div>
+
+<!--Table goes here -->
+    <div id="myTable" class="table"></div>
+
+<!--Form to accept user input-->
+    <!--<h2>HTML Forms</h2>-->
+    <div id="myForm" class="form">
+        <form onsubmit="createAListByUserInput(); return false">
+            <label for="outerListMax"><b>Enter the number of Columns:</b></label><br>
+            <input type="text" id="outerListMax" name="outerListMax" value=""><br>
+            <label for="innerListMax"><b>Enter the number of Rows:</b></label><br>
+            <input type="text" id="innerListMax" name="innerListMax" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
+
+    <div class="tip">
+        <img class="brainImage" src="Assignment1-img/brain-working-out.jpeg">
+        <p><b>Your life will be a lot easier when you can simply 
+            remember the multiplication tables. <br/> So... train your memory!</b></p>
+    </div>
+
+<!--connect html to .js-->
+    <script src="assignment1.js" defer></script>
+</body>
+
+<footer>
+    <div class="copyright"> 
+        <h5>Copyright by Lucianna Mendonca. All Rights Reserved.<br/>
+            Software Engineering Technology - Second Semester<br/>
+        </h5>
+    </div>
+</footer>
+
+</html>
+
